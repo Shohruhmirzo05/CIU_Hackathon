@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DirectMe</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/libs.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+</head>
+<body>
+
+
+<section class="cont_header">
+    <div class="header">
+        <div class="container">
+            <h1 class="cont_logo">DirectMe</h1>
+            <div class="cont__navbar">
+                <a href="index.html">Home</a>
+                <a href="#aboutus">About Us</a>
+                <a href="/">Settings</a>
+                <a href="#contacts">Contacts</a>
+                <input placeholder="Search" type="text">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="banner_wrapper" style="height: 700px;">
+    <div class="next_arrow"></div>
+    <div class="prev_arrow"></div>
+    <div class="banner">
+        <input type="radio" class="arrow" name="xx">
+        <input type="radio" class="arrow" name="xx" id="x1">
+        <label for="x3"></label>
+        <div class="banner_box">
+            <img src="images/back_1.png">
+            <h1>#1 MIT </h1>
+            <div class="score__slide">
+                <p class="first_sc">IELTS: 7</p>
+                <p>SAT: 1510</p>
+                <p>GPA: 4.2</p>
+            </div>
+        </div>
+
+        <input type="radio" name="xx">
+        <input id="x2" type="radio" name="xx">
+        <label for="x1"></label>
+        <div class="banner_box">
+            <img src="images/back_2.png">
+            <h1>#2 Oxford university  </h1>
+            <div class="score__slide">
+                <p class="first_sc">IELTS: 7</p>
+                <p>SAT: 1470</p>
+                <p>GPA: 3.7</p>
+            </div>
+        </div>
+
+        <input type="radio" name="xx">
+        <input id="x3" type="radio" name="xx">
+        <label for="x2"></label>
+        <div class="banner_box">
+            <img src="images/back_3.png">
+            <h1>#3 cambridge university </h1>
+            <div class="score__slide">
+                <p class="first_sc">IELTS: 7</p>
+                <p>SAT: 1460</p>
+                <p>GPA: 3.7</p>
+            </div>
+        </div>
+
+        <input type="radio" name="xx">
+        <input id="x4" type="radio" name="xx">
+        <label for="x2"></label>
+        <div class="banner_box">
+            <img src="images/back_4.png">
+            <h1>#4 Stanford university </h1>
+            <div class="score__slide">
+                <p class="first_sc">IELTS: 7</p>
+                <p>SAT: 1460</p>
+                <p>GPA: 3.7</p>
+            </div>
+        </div>
+
+        <input type="radio" name="xx">
+        <input id="x5" type="radio" name="xx">
+        <label for="x2"></label>
+        <div class="banner_box">
+            <img src="images/back_%.png">
+            <h1>#5 Harward university </h1>
+            <div class="score__slide">
+                <p class="first_sc">IELTS: 7</p>
+                <p>SAT: 1460</p>
+                <p>GPA: 3.7</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="rec">
+    <div class="container">
+        <h1 style="text-transform:uppercase;">Top 25 universities you can find your way.</h1>
+        <!-- <h1 class="rec__text">Recommended <img class="ticked" src="img/ticked.svg" alt=""></h1> -->
+    </div>
+</section>
+<section class="sex">
+    <div class="container">
+        <input placeholder="IELTS" type="number" id="ielts">
+        <input placeholder="TOEFL" type="number" id="toefl" />
+        <input placeholder="SAT" type="number" id="sat" />
+        <button onclick="show_un()">Search</button>
+    </div>
+</section>
+    <section class="u__list">
+        <section id="universities"></section>
+        <!--<div class="container">-->
+            <!--<div class="list__item">-->
+                <!--<div class="sec__list">-->
+                    <!--<div class="left__list">-->
+                        <!--<img src="img/california.svg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="right__list">-->
+                        <!--<h1>#6 California institue of technology</h1>-->
+                        <!--<p>We tend to take our sense of touch for granted in everyday settings, but it is vital for our ability to interact with our surroundings</p>-->
+                        <!--<div class="scores">-->
+                            <!--<p>IELTS: 7</p>-->
+                            <!--<p>SAT: 1530</p>-->
+                            <!--<p>GPA: 3.5</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </section>
+<section id="contacts" class="footer">
+    <div class="container">
+        <div class="top__foot">
+            <a class="logo" href="#">DirectMe</a>
+            <div class="foot_bar">
+                <a href="#">Teaching Center</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="stick"></div>
+        <div class="bot__foot">
+            <div class="left">
+                <p>DirectMe Inc.
+                    2569 Land Park Dr, Sacramento, CA 95818
+                    office@DirectMefinance.com
+                    +998900077725</p>
+                <p class="yer"> © 2022 DirectMe Inc.</p>
+            </div>
+            <div class="right">
+                <!--<a href="/"><img src="img/tg.svg" alt=""></a>-->
+                <!--<a href="/"><img src="img/tg.svg" alt=""></a>-->
+                <a href="#"><img src="img/tg.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/index.js"></script>
+</body>
+</html>

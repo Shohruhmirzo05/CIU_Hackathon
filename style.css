@@ -1,0 +1,151 @@
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+
+}
+img{
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	height: 700px;
+
+}
+.banner_wrapper{
+	position: relative;
+}
+.banner_wrapper h1{
+	position: absolute;
+	top: 481px;
+	left: 138px;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+.score__slide{
+	position: absolute;
+	top: 553px;
+	left: 138px;
+	display: flex;
+}
+.score__slide p{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	margin-left: 70px;
+}
+.first_sc{
+	margin-left: 0!important;
+}
+
+.next_arrow{
+	width: 100px;
+	height: 90%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	pointer-events: none;
+	background: url('../images/prev.svg') center center no-repeat;
+	background-size: 30%
+}
+.prev_arrow{
+	width: 100px;
+	height: 90%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	pointer-events: none;
+	background: url('../images/next.svg') center center no-repeat;
+	background-size: 30%
+}
+.banner{
+	position: relative;
+	width: 100vw;
+	height: 700px;
+	overflow: hidden;
+}
+.banner_box{
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	opacity: 0;
+}
+
+input{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 100px;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+}
+label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 1;
+}
+input + input{
+	left: 0;
+	z-index: 0
+}
+input:first-of-type,
+label:first-of-type{
+	z-index: 3
+}
+.banner_box:first-of-type{
+	z-index: 2;
+	opacity: 1;
+}
+input:checked{
+	z-index: 0;
+}
+input:checked+input+label+.banner_box{
+	z-index: 1;
+}
+input:checked+input+label+.banner_box+input+input+label{
+	z-index: 3
+}
+input:checked+input+label+.banner_box+input+input+label+.banner_box {
+	z-index: 2;
+	opacity: 1;
+}
+input:checked+input+label+.banner_box+input{
+	z-index: 3;
+}
+
+input+input:checked+label{
+	z-index: 3
+}
+input+input:checked+label+.banner_box{
+	z-index: 2;
+	opacity: 1;
+}
+
+
+
